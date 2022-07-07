@@ -28,6 +28,8 @@ const submit = () => {
         <BreezeValidationErrors class="mb-4" />
 
         <form @submit.prevent="submit">
+            <h3 class="font-bold text-center text-gray-600">Información personal</h3>
+
             <div>
                 <BreezeLabel for="name" value="Name" />
                 <BreezeInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
@@ -36,6 +38,11 @@ const submit = () => {
             <div class="mt-4">
                 <BreezeLabel for="email" value="Email" />
                 <BreezeInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autocomplete="username" />
+            </div>
+
+            <div class="mt-4">
+                <BreezeLabel for="birthdate" value="Fecha de nacimiento" />
+                <BreezeInput id="birthdate" type="date" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
