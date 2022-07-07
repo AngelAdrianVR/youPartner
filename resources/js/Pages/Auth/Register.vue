@@ -39,6 +39,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
+                <BreezeLabel for="birthdate" value="Fecha de nacimiento" />
+                <BreezeInput id="birthdate" type="date" class="mt-1 block w-full" v-model="form.email" required autocomplete="username" />
+            </div>
+
+            <div class="mt-4">
                 <BreezeLabel for="password" value="Password" />
                 <BreezeInput id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="new-password" />
             </div>
